@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492EBF5E228E765500EF22B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EBF5D228E765500EF22B2 /* AppDelegate.swift */; };
+		492EBF60228E765500EF22B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EBF5F228E765500EF22B2 /* ViewController.swift */; };
+		492EBF63228E765500EF22B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492EBF61228E765500EF22B2 /* Main.storyboard */; };
+		492EBF65228E765600EF22B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492EBF64228E765600EF22B2 /* Assets.xcassets */; };
+		492EBF68228E765600EF22B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492EBF66228E765600EF22B2 /* LaunchScreen.storyboard */; };
+		492EBF73228E765600EF22B2 /* SiriSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EBF72228E765600EF22B2 /* SiriSearchTests.swift */; };
+		492EBF7E228E765600EF22B2 /* SiriSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EBF7D228E765600EF22B2 /* SiriSearchUITests.swift */; };
+		492EBF93228E76E500EF22B2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EBF92228E76E500EF22B2 /* IntentHandler.swift */; };
+		492EBF97228E76E500EF22B2 /* PhotoIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 492EBF90228E76E500EF22B2 /* PhotoIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		495B7A71228EADA600953320 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 495B7A70228EADA600953320 /* AppIntentVocabulary.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		492EBF6F228E765600EF22B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492EBF52228E765400EF22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492EBF59228E765400EF22B2;
+			remoteInfo = SiriSearch;
+		};
+		492EBF7A228E765600EF22B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492EBF52228E765400EF22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492EBF59228E765400EF22B2;
+			remoteInfo = SiriSearch;
+		};
+		492EBF95228E76E500EF22B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492EBF52228E765400EF22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492EBF8F228E76E500EF22B2;
+			remoteInfo = PhotoIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		492EBF9B228E76E500EF22B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				492EBF97228E76E500EF22B2 /* PhotoIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		492EBF5A228E765400EF22B2 /* SiriSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492EBF5D228E765500EF22B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492EBF5F228E765500EF22B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492EBF62228E765500EF22B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492EBF64228E765600EF22B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492EBF67228E765600EF22B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		492EBF69228E765600EF22B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492EBF6E228E765600EF22B2 /* SiriSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492EBF72228E765600EF22B2 /* SiriSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchTests.swift; sourceTree = "<group>"; };
+		492EBF74228E765600EF22B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492EBF79228E765600EF22B2 /* SiriSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492EBF7D228E765600EF22B2 /* SiriSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchUITests.swift; sourceTree = "<group>"; };
+		492EBF7F228E765600EF22B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492EBF8B228E768E00EF22B2 /* SiriSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriSearch.entitlements; sourceTree = "<group>"; };
+		492EBF90228E76E500EF22B2 /* PhotoIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		492EBF92228E76E500EF22B2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		492EBF94228E76E500EF22B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495B7A70228EADA600953320 /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492EBF57228E765400EF22B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF6B228E765600EF22B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF76228E765600EF22B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF8D228E76E500EF22B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492EBF51228E765400EF22B2 = {
+			isa = PBXGroup;
+			children = (
+				492EBF5C228E765400EF22B2 /* SiriSearch */,
+				492EBF71228E765600EF22B2 /* SiriSearchTests */,
+				492EBF7C228E765600EF22B2 /* SiriSearchUITests */,
+				492EBF91228E76E500EF22B2 /* PhotoIntent */,
+				492EBF5B228E765400EF22B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492EBF5B228E765400EF22B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492EBF5A228E765400EF22B2 /* SiriSearch.app */,
+				492EBF6E228E765600EF22B2 /* SiriSearchTests.xctest */,
+				492EBF79228E765600EF22B2 /* SiriSearchUITests.xctest */,
+				492EBF90228E76E500EF22B2 /* PhotoIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492EBF5C228E765400EF22B2 /* SiriSearch */ = {
+			isa = PBXGroup;
+			children = (
+				495B7A70228EADA600953320 /* AppIntentVocabulary.plist */,
+				492EBF8B228E768E00EF22B2 /* SiriSearch.entitlements */,
+				492EBF5D228E765500EF22B2 /* AppDelegate.swift */,
+				492EBF5F228E765500EF22B2 /* ViewController.swift */,
+				492EBF61228E765500EF22B2 /* Main.storyboard */,
+				492EBF64228E765600EF22B2 /* Assets.xcassets */,
+				492EBF66228E765600EF22B2 /* LaunchScreen.storyboard */,
+				492EBF69228E765600EF22B2 /* Info.plist */,
+			);
+			path = SiriSearch;
+			sourceTree = "<group>";
+		};
+		492EBF71228E765600EF22B2 /* SiriSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				492EBF72228E765600EF22B2 /* SiriSearchTests.swift */,
+				492EBF74228E765600EF22B2 /* Info.plist */,
+			);
+			path = SiriSearchTests;
+			sourceTree = "<group>";
+		};
+		492EBF7C228E765600EF22B2 /* SiriSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				492EBF7D228E765600EF22B2 /* SiriSearchUITests.swift */,
+				492EBF7F228E765600EF22B2 /* Info.plist */,
+			);
+			path = SiriSearchUITests;
+			sourceTree = "<group>";
+		};
+		492EBF91228E76E500EF22B2 /* PhotoIntent */ = {
+			isa = PBXGroup;
+			children = (
+				492EBF92228E76E500EF22B2 /* IntentHandler.swift */,
+				492EBF94228E76E500EF22B2 /* Info.plist */,
+			);
+			path = PhotoIntent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492EBF59228E765400EF22B2 /* SiriSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492EBF82228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearch" */;
+			buildPhases = (
+				492EBF56228E765400EF22B2 /* Sources */,
+				492EBF57228E765400EF22B2 /* Frameworks */,
+				492EBF58228E765400EF22B2 /* Resources */,
+				492EBF9B228E76E500EF22B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492EBF96228E76E500EF22B2 /* PBXTargetDependency */,
+			);
+			name = SiriSearch;
+			productName = SiriSearch;
+			productReference = 492EBF5A228E765400EF22B2 /* SiriSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		492EBF6D228E765600EF22B2 /* SiriSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492EBF85228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearchTests" */;
+			buildPhases = (
+				492EBF6A228E765600EF22B2 /* Sources */,
+				492EBF6B228E765600EF22B2 /* Frameworks */,
+				492EBF6C228E765600EF22B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492EBF70228E765600EF22B2 /* PBXTargetDependency */,
+			);
+			name = SiriSearchTests;
+			productName = SiriSearchTests;
+			productReference = 492EBF6E228E765600EF22B2 /* SiriSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		492EBF78228E765600EF22B2 /* SiriSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492EBF88228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearchUITests" */;
+			buildPhases = (
+				492EBF75228E765600EF22B2 /* Sources */,
+				492EBF76228E765600EF22B2 /* Frameworks */,
+				492EBF77228E765600EF22B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492EBF7B228E765600EF22B2 /* PBXTargetDependency */,
+			);
+			name = SiriSearchUITests;
+			productName = SiriSearchUITests;
+			productReference = 492EBF79228E765600EF22B2 /* SiriSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		492EBF8F228E76E500EF22B2 /* PhotoIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492EBF98228E76E500EF22B2 /* Build configuration list for PBXNativeTarget "PhotoIntent" */;
+			buildPhases = (
+				492EBF8C228E76E500EF22B2 /* Sources */,
+				492EBF8D228E76E500EF22B2 /* Frameworks */,
+				492EBF8E228E76E500EF22B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoIntent;
+			productName = PhotoIntent;
+			productReference = 492EBF90228E76E500EF22B2 /* PhotoIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492EBF52228E765400EF22B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "PRAMOD S";
+				TargetAttributes = {
+					492EBF59228E765400EF22B2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					492EBF6D228E765600EF22B2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 492EBF59228E765400EF22B2;
+					};
+					492EBF78228E765600EF22B2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 492EBF59228E765400EF22B2;
+					};
+					492EBF8F228E76E500EF22B2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 492EBF55228E765400EF22B2 /* Build configuration list for PBXProject "SiriSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492EBF51228E765400EF22B2;
+			productRefGroup = 492EBF5B228E765400EF22B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492EBF59228E765400EF22B2 /* SiriSearch */,
+				492EBF6D228E765600EF22B2 /* SiriSearchTests */,
+				492EBF78228E765600EF22B2 /* SiriSearchUITests */,
+				492EBF8F228E76E500EF22B2 /* PhotoIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492EBF58228E765400EF22B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492EBF68228E765600EF22B2 /* LaunchScreen.storyboard in Resources */,
+				492EBF65228E765600EF22B2 /* Assets.xcassets in Resources */,
+				495B7A71228EADA600953320 /* AppIntentVocabulary.plist in Resources */,
+				492EBF63228E765500EF22B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF6C228E765600EF22B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF77228E765600EF22B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF8E228E76E500EF22B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492EBF56228E765400EF22B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492EBF60228E765500EF22B2 /* ViewController.swift in Sources */,
+				492EBF5E228E765500EF22B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF6A228E765600EF22B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492EBF73228E765600EF22B2 /* SiriSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF75228E765600EF22B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492EBF7E228E765600EF22B2 /* SiriSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492EBF8C228E76E500EF22B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492EBF93228E76E500EF22B2 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		492EBF70228E765600EF22B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492EBF59228E765400EF22B2 /* SiriSearch */;
+			targetProxy = 492EBF6F228E765600EF22B2 /* PBXContainerItemProxy */;
+		};
+		492EBF7B228E765600EF22B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492EBF59228E765400EF22B2 /* SiriSearch */;
+			targetProxy = 492EBF7A228E765600EF22B2 /* PBXContainerItemProxy */;
+		};
+		492EBF96228E76E500EF22B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492EBF8F228E76E500EF22B2 /* PhotoIntent */;
+			targetProxy = 492EBF95228E76E500EF22B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		492EBF61228E765500EF22B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492EBF62228E765500EF22B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		492EBF66228E765600EF22B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492EBF67228E765600EF22B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		492EBF80228E765600EF22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		492EBF81228E765600EF22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		492EBF83228E765600EF22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriSearch/SiriSearch.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 849UP4BSN8;
+				INFOPLIST_FILE = SiriSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedialabs.devteam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Team";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		492EBF84228E765600EF22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriSearch/SiriSearch.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 849UP4BSN8;
+				INFOPLIST_FILE = SiriSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedialabs.devteam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Team";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		492EBF86228E765600EF22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedia.SiriSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriSearch.app/SiriSearch";
+			};
+			name = Debug;
+		};
+		492EBF87228E765600EF22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedia.SiriSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriSearch.app/SiriSearch";
+			};
+			name = Release;
+		};
+		492EBF89228E765600EF22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedia.SiriSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiriSearch;
+			};
+			name = Debug;
+		};
+		492EBF8A228E765600EF22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiriSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedia.SiriSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiriSearch;
+			};
+			name = Release;
+		};
+		492EBF99228E76E500EF22B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 849UP4BSN8;
+				INFOPLIST_FILE = PhotoIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedialabs.devteam.SiriAccountSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SiriAccountSample-New-2019";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		492EBF9A228E76E500EF22B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 849UP4BSN8;
+				INFOPLIST_FILE = PhotoIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymedialabs.devteam.SiriAccountSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SiriAccountSample-New-2019";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492EBF55228E765400EF22B2 /* Build configuration list for PBXProject "SiriSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EBF80228E765600EF22B2 /* Debug */,
+				492EBF81228E765600EF22B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492EBF82228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EBF83228E765600EF22B2 /* Debug */,
+				492EBF84228E765600EF22B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492EBF85228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EBF86228E765600EF22B2 /* Debug */,
+				492EBF87228E765600EF22B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492EBF88228E765600EF22B2 /* Build configuration list for PBXNativeTarget "SiriSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EBF89228E765600EF22B2 /* Debug */,
+				492EBF8A228E765600EF22B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492EBF98228E76E500EF22B2 /* Build configuration list for PBXNativeTarget "PhotoIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EBF99228E76E500EF22B2 /* Debug */,
+				492EBF9A228E76E500EF22B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492EBF52228E765400EF22B2 /* Project object */;
+}
